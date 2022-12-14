@@ -46,6 +46,10 @@ public class headphonesApp {
         System.out.println();
         
         scanner.close();
+
+        // Created a way to change data by bulk - input new brand, new material1 and new material2
+        headphones4.changeData("", "", "");
+        headphones4.printData();
     } // End of main
 }
 
@@ -117,4 +121,11 @@ class Headphones // Making a class of headphones, that include the functionality
                             }
         
                     }
+
+                public void changeData(String newBrand, String newMaterial1, String newMaterial2)
+                {
+                    brand = newBrand;
+                    material1 = newMaterial1;
+                    material2 = newMaterial2;
+                }
         }

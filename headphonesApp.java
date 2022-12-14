@@ -48,6 +48,7 @@ public class headphonesApp {
         scanner.close();
 
         // Created a way to change data by bulk - input new brand, new material1 and new material2
+        System.out.println("The data below has been changed via the changeData-method");
         headphones4.changeData("", "", "");
         headphones4.printData();
     } // End of main

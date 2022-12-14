@@ -1,28 +1,51 @@
+import java.util.Scanner;
+
 public class headphonesApp {
     
     public static void main(String[] args) {
         
+        Scanner scanner = new Scanner(System.in);
+        //Headphones headphones1 = new Headphones();
         
-        Headphones headphones1 = new Headphones();
+        //headphones1.printData();
+        //headphones1.volumeUp();
+
+        //System.out.println();
+
+
+        //Headphones headphones2 = new Headphones();
         
-        headphones1.printData();
-        headphones1.volumeUp();
+        //headphones2.printData();
+        //headphones2.volumeDown();
+
+        //System.out.println();
+
+        //Headphones headphones3 = new Headphones(true, "Beyerdynamics", "Velour", "Plastic");
+
+        //headphones3.printData();
+
+        //Asking questions for generating headphones4
+        System.out.println();
+        String brandUser;
+        System.out.println("What is manufacturer of the headphones?");
+        brandUser = scanner.nextLine();
 
         System.out.println();
-
-
-        Headphones headphones2 = new Headphones();
-        
-        headphones2.printData();
-        headphones2.volumeDown();
+        String material1User;
+        System.out.println("What are the cushions made out of?");
+        material1User = scanner.nextLine();
 
         System.out.println();
+        String material2User;
+        System.out.println("What is the headband made out of?");
+        material2User = scanner.nextLine();
 
-        Headphones headphones3 = new Headphones(true, "Beyerdynamics", "Velour", "Plastic");
-
-        headphones3.printData();
+        System.out.println();
+        Headphones headphones4 = new Headphones(false, brandUser, material1User, material2User);
+        headphones4.printData();
+        System.out.println();
         
-
+        scanner.close();
     } // End of main
 }
 
@@ -77,7 +100,7 @@ class Headphones // Making a class of headphones, that include the functionality
                     {
                         System.out.println("Volume -");
                     }
-
+                //Print the data of the headphones, this can be controlled via the main class through the scanner
                 public void printData()
                     {
                         System.out.println("Headphones: ");
